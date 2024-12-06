@@ -5,12 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class MouseHoverAction {
+public class MouseActions {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -24,6 +22,12 @@ public class MouseHoverAction {
        //act.moveToElement(kategoriebi).moveToElement(danamatebi).click().build().perform();
 
        // Right click action
-        act.contextClick(danamatebi).perform();
+        // act.contextClick(danamatebi).perform();
+
+      // Double click action on the button
+        // act.doubleClick(button).perform();
+
+    // Actions -> class, will be used to perform mouse actions
+        //Action -> interface, will be used to store created actions
     }
 }
