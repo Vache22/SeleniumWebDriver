@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite">
+
+    <!-- Define listeners -->
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+    <!-- Define test -->
+    <test name="Test" thread-count="5">
+        <parameter name="os" value="windows"/>
+
+        <!-- Define groups to include -->
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <!-- Define classes to be executed in the test -->
+        <classes>
+            <class name="DDT2.LoginTest2"/>
+        </classes>
+    </test>
+
+</suite>

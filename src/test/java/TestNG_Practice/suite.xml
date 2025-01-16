@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="all-annotations">
+    <test name="test2" thread-count="5">
+        <classes>
+            <class name="TestNG_Practice.AllAnnotations" />
+        </classes>
+    </test>
+</suite>
